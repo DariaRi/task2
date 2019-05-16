@@ -1,0 +1,18 @@
+//Only styles for IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .latest-projects .items-container article img:before {
+    display: none !important;
+    position: relative !important;
+  }
+ .latest-projects .items-container  article:hover img:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}

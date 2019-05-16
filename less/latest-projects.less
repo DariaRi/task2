@@ -1,0 +1,212 @@
+.latest-projects {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  .heading {
+    margin: 0 auto 24px;
+    color: #555;
+    font-family: 'Raleway-SemiBold', 'Arial', sans-serif;
+    font-size: 1.875em;
+    font-weight: 400;
+    text-align: center;
+  }
+  .description {
+    margin: 0 auto 40px;
+    max-width: 769px;
+    width: 100%;
+    font-family: 'Montserrat-Light', 'Arial', sans-serif;
+    color: #8c8c8c;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 603px;
+    width: 100%;
+    margin: 0 auto 40px;
+
+    .btn {
+      height: 32px;
+      //padding: ;
+      border-radius: 3px;
+      border: 1px solid #ebebeb;
+      background-color: #fff;
+      color: #8c8c8c;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 21px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #998675;
+      color: #fff;
+    }
+    .btn:active {
+      background-color: #fff;
+    }
+    .btn-all {
+      width: 70px;
+    }
+    .btn-design,
+    .btn-app,
+    .btn-illustration {
+      width: 120px;
+    }
+    .btn-photography {
+      width: 135px;
+    }
+  }
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: @width-content;
+    width: 100%;
+    margin: 0 auto;
+    .article {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      height: 330px;
+      background-color: #fbfaf8;
+      margin-bottom: 30px;
+      cursor: pointer;
+      position: relative;
+      .article-heading {
+        color: #c7b299;
+        font-family: 'Raleway-Medium', 'Arial', sans-serif;
+        font-size: 1.250em;
+        font-weight: 500;
+        margin: 30px 0 5px 30px;
+        position: relative;
+      }
+      .topic {
+        color: #d1d1d1;
+        font-family: 'Montserrat-Light', 'Arial', sans-serif;;
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 20px;
+        margin: 0 0 27px 30px;
+      }
+      .article-heading:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 52px;
+        left: -15px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 10px solid #fbfaf8;
+      }
+      .share {
+        display: none;
+        //display: block;
+        width: 26px;
+        height: 26px;
+        background-image: url(../img/share-icon.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 106px;
+        left: 144px;
+        border: none;
+        background-color: transparent;
+      }
+      .search {
+        display: none;
+        //display: block;
+        width: 26px;
+        height: 26px;
+        background-image: url(../img/lupa-icon.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 106px;
+        right: 144px;
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .article:hover {
+      background-color: #362f2d;
+    }
+    .article:hover img {
+      filter: brightness(40%)
+    }
+    .article:hover .article-heading:before {
+      border-bottom: 10px solid #362f2d;
+    }
+    .article:hover .article-heading {
+      color: #fff;
+    }
+    .article:hover .topic {
+      color: #c7b299;
+    }
+    .article:hover .share,
+    .article:hover .search {
+      display: block;
+      cursor: pointer;
+    }
+    .article:hover .share:hover {
+      display: block;
+      width: 26px;
+      height: 26px;
+      background-image: url(../img/share-icon-hover.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 106px;
+      left: 144px;
+      border: none;
+      background-color: transparent;
+    }
+    .article:hover .share:active {
+      background-image: url(../img/share-icon.png);
+    }
+    .article:hover .search:hover {
+      display: block;
+      width: 26px;
+      height: 26px;
+      background-image: url(../img/lupa-icon-hover.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 106px;
+      right: 144px;
+      border: none;
+      background-color: transparent;
+    }
+    .article:hover .search:active {
+      background-image: url(../img/lupa-icon.png);
+    }
+  }
+  .load-more {
+    display: block;
+    color: #fff;
+    font-family: 'Raleway-ExtraBold', 'Arial', sans-serif;
+    font-size: 0.875em;
+    font-weight: 800;
+    line-height: 23px;
+    text-transform: uppercase;
+    width: 170px;
+    height: 53px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto 0;
+    -webkit-transition: all 0.05s linear;
+  }
+  .load-more:hover {
+    background-color: #211b19;
+    color: #998675;
+    box-shadow: inset 0 -3px 0 #1d1816;
+  }
+  .load-more:active {
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #fff;
+  }
+}

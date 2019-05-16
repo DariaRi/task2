@@ -1,0 +1,10 @@
+@media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
+  .vid-content {
+    max-width: 562px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 199px;
+    left: 657px;
+  }
+}
