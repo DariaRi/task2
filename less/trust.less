@@ -1,0 +1,70 @@
+.trust {
+  max-width: @width;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.trust-content {
+  max-width: 925px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.trust-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &:after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 15px);
+  }
+  .trust-numbers {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat-ExtraLight', 'Arial', sans-serif;
+    font-size: 3.000em;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .trust-txt {
+    text-align: center;
+    color: #c7b299;
+    font-family: 'Montserrat-Light', 'Arial', sans-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .trust-icon {
+    .icon-trust();
+    margin-bottom: 30px;
+  }
+  .trust-icon-clients {
+    background: url(../img/icon-clients.png) no-repeat;
+  }
+  .trust-icon-coffee {
+    width: 48px;
+    background: url(../img/icon-coffee.png) no-repeat;
+  }
+  .trust-icon-post {
+    background: url(../img/icon-post.png) no-repeat;
+  }
+  .trust-icon-like {
+    background: url(../img/likes-icon.png) no-repeat;
+  }
+  .trust-icon-launched {
+    width: 54px;
+    background: url(../img/launched-icon.png) no-repeat;
+  }
+}

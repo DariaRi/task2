@@ -1,1 +1,80 @@
 //Only styles for Section Mobile Devices
+.mob-device {
+  max-width: @width;
+  width: 100%;
+  background-color: #fbfaf8;
+  margin: 0 auto;
+  .mob-device_content {
+    margin: 0 auto;
+    padding-top: 80px;
+    max-width: @width-content;
+    width: 100%;
+    display: flex;
+  }
+  .mob-device_description {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 663px;
+    width: 100%;
+    h3 {
+      color: #555;
+      font-family: 'Raleway-SemiBold', 'Arial', sans-serif;
+      font-size: 1.875em;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    span,
+    summary {
+      color: #8c8c8c;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+    }
+    .list-details {
+      padding-left: 50px;
+    }
+    span {
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    p {
+      color: #8c8c8c;
+      font-family: 'Raleway-Regular', 'Arial', sans-serif;
+      font-size: 0.875em;
+      font-weight: 300;
+      line-height: 28px;
+    }
+    details summary::-webkit-details-marker {
+      color:transparent;
+    }
+    details summary {
+      line-height: 32px;
+      cursor: pointer;
+      display: inline-flex;
+      list-style-type: none;
+      margin-top: 10px;
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 21px;
+        width: 21px;
+        background: url(../img/marker-details.png) no-repeat;
+        list-style-position: outside;
+        align-self: center;
+        cursor: pointer;
+      }
+      &:hover {
+        color: #404040;
+        font-family: 'Montserrat-Light', 'Arial', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+      }
+      &:active:before {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+      }
+    }
+  }
+}
