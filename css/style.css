@@ -2253,6 +2253,9 @@ footer {
   .mob-device .mob-device_description .list-details {
     padding-bottom: 10px;
   }
+  section.carousel .heading-content .pagination {
+    margin: 13% auto 1%;
+  }
 }
 @media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
   section.video-presentation .vid-content {
