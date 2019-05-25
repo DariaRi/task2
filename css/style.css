@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 1024px;
+}
+section.carousel {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 1024px;
+  background-image: url(../img/slider-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
+section.carousel:before {
+  content: "";
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  max-height: 1024px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.7);
+}
+.carousel .heading {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto 14.5%;
+  padding-top: 40px;
+  max-width: 1171px;
+  width: 100%;
+}
+.carousel .heading .logo a {
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
+}
+.carousel .heading .logo span {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 2.125em;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+}
+.carousel .heading nav {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+.carousel .heading nav .menu-list {
+  width: 100%;
+}
+.carousel .heading nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.carousel .heading nav li a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.875em;
+  font-weight: 300;
+  -webkit-transition: all 0.08s linear;
+}
+.carousel .heading nav li a:hover {
+  color: #c7b299;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+}
+.carousel .heading nav li a:active {
+  color: #fff;
+}
+.carousel .heading nav .cart {
+  display: block;
+  width: 18px;
+  height: 24px;
+  background-image: url(../img/icon-cart.png);
+  margin-right: 28px;
+  flex: none;
+}
+.carousel .heading nav .search {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon-search.png);
+  flex: none;
+}
+section.carousel .heading-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section.carousel .heading-content .title {
+  margin: 0 auto;
+}
+section.carousel .heading-content .title h2 {
+  text-align: center;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 2.25em;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+section.carousel .heading-content .title h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 3.25em;
+  font-weight: 800;
+  margin-bottom: 19px;
+}
+section.carousel .heading-content .title span {
+  text-align: center;
+  width: 574px;
+  display: block;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 auto 52px;
+}
+section.carousel .heading-content .title button {
+  display: block;
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 0.875em;
+  font-weight: 800;
+  line-height: 23px;
+  text-transform: uppercase;
+  width: 170px;
+  height: 53px;
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  -webkit-transition: all 0.05s linear;
+}
+section.carousel .heading-content .title button:hover {
+  background-color: #111;
+  color: #998675;
+  box-shadow: inset 0 -3px 0 #000;
+}
+section.carousel .heading-content .title button:active {
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  color: #fff;
+}
+section.carousel .heading-content .arrow-back {
+  position: absolute;
+  top: 125px;
+  left: 150px;
+  width: 40px;
+  height: 73px;
+  cursor: pointer;
+  display: block;
+  background: url(../img/arrow-back.png);
+  border: none;
+  opacity: 0.5;
+  -webkit-transition: all 0.15s linear;
+}
+section.carousel .heading-content .arrow-back:hover {
+  opacity: 0.7;
+}
+section.carousel .heading-content .arrow-back:active {
+  opacity: 0.5;
+}
+section.carousel .heading-content .arrow-forward {
+  position: absolute;
+  top: 125px;
+  right: 150px;
+  width: 40px;
+  height: 73px;
+  cursor: pointer;
+  display: block;
+  background: url(../img/arrow-forward.png);
+  border: none;
+  opacity: 0.5;
+  -webkit-transition: all 0.15s linear;
+}
+section.carousel .heading-content .arrow-forward:hover {
+  opacity: 0.7;
+}
+section.carousel .heading-content .arrow-forward:active {
+  opacity: 0.5;
+}
+section.carousel .heading-content .pagination {
+  border: none;
+  margin: 16% auto 1%;
+}
+section.carousel .heading-content .pagination input[type="radio"] {
+  display: none;
+}
+section.carousel .heading-content .pagination input[type="radio"] + label {
+  margin-right: 10px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  cursor: pointer;
+}
+section.carousel .heading-content .pagination input[type="radio"]:checked + label {
+  background-color: transparent;
+  background-image: url(../img/circle-active.png);
+  width: 15px;
+  height: 15px;
+  margin-left: -4px;
+  margin-bottom: -2px;
+  opacity: 1;
+}
+section.service {
+  max-width: 1171px;
+  width: 100%;
+  margin: 5% auto;
+}
+section.service ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section.service .block {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+section.service .block .design {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon-service-1.png);
+}
+section.service .block .development {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon-service-2.png);
+}
+section.service .block .settings {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon-service-3.png);
+}
+section.service .block .marketing {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon-service-4.png);
+}
+section.service .block .icon {
+  margin-bottom: 29px;
+}
+section.service .block .block-name {
+  color: #555;
+  font-family: "Raleway";
+  font-size: 1.375em;
+  font-weight: 600;
+  margin-bottom: 19px;
+}
+section.service .block .text {
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+section.service .block .border {
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 0 auto;
+}
+section.service .block:hover .design {
+  background-image: url(../img/icon-service-1-hover.png);
+}
+section.service .block:hover .development {
+  background-image: url(../img/icon-service-2-hover.png);
+}
+section.service .block:hover .settings {
+  background-image: url(../img/icon-service-3-hover.png);
+}
+section.service .block:hover .marketing {
+  background-image: url(../img/icon-service-4-hover.png);
+}
+section.service .block:hover .block-name {
+  color: #c7b299;
+}
+section.service .block:hover .border {
+  width: 70px;
+  height: 3px;
+  background-color: #c7b299;
+}
+.realization-ideas {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fbfaf8;
+  display: flex;
+  flex-direction: column;
+}
+.realization-ideas h3 {
+  text-align: center;
+  color: #555;
+  font-family: "Raleway";
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 24px;
+  margin-top: 83px;
+}
+.realization-ideas span {
+  color: #8c8c8c;
+  font-family: Montserrat;
+  max-width: 780px;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 28px;
+  margin: 0 auto 40px;
+}
+.realization-ideas .img-example {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.realization-ideas .img-example .img-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.realization-ideas .img-example .img-2 {
+  position: relative;
+  z-index: 2;
+}
+.realization-ideas .img-example .img-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.realization-ideas .img-example img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
