@@ -1,0 +1,78 @@
+//Only styles for Section Service
+section.service {
+  max-width: @width-content;
+  width: 100%;
+  margin: 5% auto;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    text-align: center;
+    margin-bottom: 15px;
+    .design {
+      .icon-service();
+      background-image: url(../img/icon-service-1.png);
+    }
+    .development {
+      .icon-service();
+      background-image: url(../img/icon-service-2.png);
+    }
+    .settings {
+      .icon-service();
+      background-image: url(../img/icon-service-3.png);
+    }
+    .marketing {
+      .icon-service();
+      background-image: url(../img/icon-service-4.png);
+    }
+    .icon {
+      margin-bottom: 29px;
+    }
+    .block-name {
+      color: #555;
+      font-family: 'Raleway-SemiBold', 'Arial', sans-serif;
+      font-size: 1.375em;
+      font-weight: 600;
+      margin-bottom: 19px;
+    }
+    .text {
+      color: #8c8c8c;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;
+      font-size: 0.875em;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    .border {
+      width: 70px;
+      height: 3px;
+      background-color: #f1eee9;
+      margin: 0 auto;
+    }
+    &:hover  .design {
+      background-image: url(../img/icon-service-1-hover.png);
+    }
+    &:hover  .development {
+      background-image: url(../img/icon-service-2-hover.png);
+    }
+    &:hover  .settings {
+      background-image: url(../img/icon-service-3-hover.png);
+    }
+    &:hover  .marketing {
+      background-image: url(../img/icon-service-4-hover.png);
+    }
+    &:hover .block-name {
+      color: #c7b299;
+    }
+    &:hover .border {
+      width: 70px;
+      height: 3px;
+      background-color: #c7b299;
+    }
+  }
+}

@@ -1,0 +1,261 @@
+//Only styles for Section Carousel
+section.carousel {
+  width: 100%;
+  max-width: @width;
+  max-height: @height;
+  background-image: url(../img/slider-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
+section.carousel:before {
+  content: "";
+  width: 100%;
+  max-width: @width;
+  height: 100%;
+  max-height: @height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.7);
+}
+.carousel .heading {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto 14.5%;
+  padding-top: 40px;
+  max-width: @width-content;
+  width: 100%;
+  .logo {
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 1%;
+      width: 181px;
+    }
+    .logo-svg {
+      fill: #fff;
+    }
+    .logo:hover .logo-svg {
+      fill: #998675;
+    }
+    .logo:active .logo-svg {
+      fill: #fff;
+    }
+    span {
+      color: #fff;
+      font-family: 'Raleway-Regular', 'Arial', sans-serif;
+      text-transform: capitalize;
+      font-size: 2.125em;
+      font-weight: 400;
+      letter-spacing: -1.36px;
+    }
+    .logo:hover span {
+      color: #998675;
+    }
+    .logo:active span {
+      color: #fff;
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+    .menu-list {
+      width: 100%;
+    }
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      a{
+        color: #fff;
+        font-family: 'Montserrat-Light', 'Arial', sans-serif;
+        font-size: 0.875em;
+        font-weight: 300;
+        -webkit-transition: all 0.08s linear;
+      }
+      a:hover {
+        color: #c7b299;
+        font-family: 'Montserrat-Light', 'Arial', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      a:active {
+        color: #fff;
+      }
+    }
+    .cart {
+      display: block;
+      width: 18px;
+      height: 24px;
+      background-image: url(../img/icon-cart.png);
+      margin-right: 28px;
+      flex: none;
+    }
+    input[type="search"] {
+      width: 25px;
+      height: 25px;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;
+      color: #fff;
+      font-size: 0.875em;
+      font-weight: 300;
+      outline: none;
+      background-image: url(../img/icon-search.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      box-sizing: border-box;
+      padding: 2px 24px 2px 4px;
+      cursor: pointer;
+    }
+    input[type="search"]:focus {
+      width: 200px;
+      transition: width 1s ease-out;
+      background-position: right;
+      border: 1px solid #8c8c8c;
+    }
+    input[type=text]::-ms-clear {display: none; width : 0; height: 0;}
+    input[type=text]::-ms-reveal {display: none; width : 0; height: 0;}
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration {display: none}
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration {display: none;}
+  }
+}
+section.carousel .heading-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .title{
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-family: 'Raleway-Medium', 'Arial', sans-serif;
+      font-size: 2.250em;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-family: 'Raleway-ExtraBold', 'Arial', sans-serif;
+      font-size: 3.250em;
+      font-weight: 800;
+      margin-bottom: 19px;
+    }
+    span {
+      text-align: center;
+      width: 574px;
+      display: block;
+      color: #fff;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;;
+      font-size: 1em;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 0 auto 52px;
+    }
+    button {
+      display: block;
+      color: #fff;
+      font-family: 'Raleway-ExtraBold', 'Arial', sans-serif;
+      font-size: 0.875em;
+      font-weight: 800;
+      line-height: 23px;
+      text-transform: uppercase;
+      width: 170px;
+      height: 53px;
+      box-shadow: inset 0 -3px 0 #736357;
+      border-radius: 3px;
+      background-color: #998675;
+      border: none;
+      cursor: pointer;
+      margin: 0 auto;
+      -webkit-transition: all 0.05s linear;
+    }
+    button:hover {
+      background-color: #211b19;
+      color: #998675;
+      box-shadow: inset 0 -3px 0 #1d1816;
+    }
+    button:active {
+      box-shadow: inset 0 -3px 0 #736357;
+      border-radius: 3px;
+      background-color: #998675;
+      color: #fff;
+    }
+  }
+  .arrow-back {
+    position: absolute;
+    top: 125px;
+    left: 150px;
+    width: 40px;
+    height: 73px;
+    cursor: pointer;
+    display: block;
+    background: url(../img/arrow-back.png);
+    border: none;
+    opacity: 0.5;
+    -webkit-transition: all 0.15s linear;
+  }
+  .arrow-back:hover {
+    opacity: 0.7;
+  }
+  .arrow-back:active {
+    opacity: 0.5;
+  }
+  .arrow-forward {
+    position: absolute;
+    top: 125px;
+    right: 150px;
+    width: 40px;
+    height: 73px;
+    cursor: pointer;
+    display: block;
+    background: url(../img/arrow-forward.png);
+    border: none;
+    opacity: 0.5;
+    -webkit-transition: all 0.15s linear;
+  }
+  .arrow-forward:hover {
+    opacity: 0.7;
+  }
+  .arrow-forward:active {
+    opacity: 0.5;
+  }
+  .pagination {
+    border: none;
+    margin: 16% auto 1%;
+    text-align: center;
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"] + label {
+      margin-right: 10px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.5;
+      display: inline-block;
+      padding: 0 0 0 0;
+      cursor: pointer;
+    }
+    input[type="radio"]:checked + label {
+      background-color: transparent;
+      background-image: url(../img/circle-active.png);
+      width: 15px;
+      height: 15px;
+      margin-left: -4px;
+      margin-bottom: -2px;
+      opacity: 1;
+    }
+  }
+}
