@@ -1,18 +1,28 @@
 //Only styles for IE
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .latest-projects .items-container article img:before {
+  .latest-projects .items-container article .img:before,
+  .recent-item .img:before {
     display: none;
     position: relative;
   }
- .latest-projects .items-container  article:hover img:before {
+ .latest-projects .items-container  article:hover .img:before,
+ .recent-item:hover .img:before{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 33;
     display: block;
     content: "";
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.3);
   }
+  .mob-device .mob-device_description details summary::before {
+    width: 30px;
+    height: 23px;
+  }
+  .mob-device .mob-device_description .list-details {
+    padding-bottom: 10px;
+  }
 }
+

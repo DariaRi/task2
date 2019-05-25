@@ -4,12 +4,15 @@
   width: 100%;
   background-color: #fbfaf8;
   margin: 0 auto;
+  overflow: hidden;
   .mob-device_content {
     margin: 0 auto;
     padding-top: 80px;
     max-width: @width-content;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .mob-device_description {
     display: flex;
@@ -67,8 +70,6 @@
       &:hover {
         color: #404040;
         font-family: 'Montserrat-Light', 'Arial', sans-serif;
-        font-size: 1em;
-        font-weight: 300;
       }
       &:active:before {
         transform: rotate(90deg);

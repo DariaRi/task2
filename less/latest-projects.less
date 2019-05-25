@@ -13,7 +13,6 @@
   .description {
     margin: 0 auto 40px;
     max-width: 769px;
-    padding: 0 5px;
     width: 100%;
     font-family: 'Montserrat-Light', 'Arial', sans-serif;
     color: #8c8c8c;
@@ -105,7 +104,6 @@
       }
       .share {
         display: none;
-        //display: block;
         width: 26px;
         height: 26px;
         background-image: url(../img/share-icon.png);
@@ -118,7 +116,6 @@
       }
       .search {
         display: none;
-        //display: block;
         width: 26px;
         height: 26px;
         background-image: url(../img/lupa-icon.png);
@@ -133,7 +130,7 @@
     .article:hover {
       background-color: #362f2d;
     }
-    .article:hover img {
+    .article:hover .img {
       filter: brightness(40%)
     }
     .article:hover .article-heading:before {
@@ -149,6 +146,7 @@
     .article:hover .search {
       display: block;
       cursor: pointer;
+      z-index: 33;
     }
     .article:hover .share:hover {
       display: block;

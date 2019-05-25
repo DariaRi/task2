@@ -1,23 +1,29 @@
 .additional-info {
   max-width: @width;
   width: 100%;
-  max-height: 508px;
   height: 100%;
   margin: 0 auto;
   background-color: #191919;
+  overflow: hidden;
 }
 .additional-info_content {
   margin: 0 auto;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: @width-content;
+  width: 100%;
+  article,
+  div {
+    margin-bottom: 20px;
+  }
   .about-site {
     max-width: 258px;
     width: 100%;
     margin-right: 30px;
+    padding-left: 10px;
     .fdcolumn ();
     .logo {
       display: flex;
@@ -145,6 +151,7 @@
     max-width: 270px;
     width: 100%;
     padding-top: 16px;
+    padding-left: 10px;
     .heading {
       .heading-additional ();
     }

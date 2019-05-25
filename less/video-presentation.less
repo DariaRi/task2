@@ -34,7 +34,7 @@
   left: 35%;
   .play-icon {
     cursor: pointer;
-    margin: 0 auto 44px;
+    margin: 0 auto;
     width: 100px;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -42,8 +42,15 @@
     background-position: center;
     background-image: url(../img/icon-play.png);
     background-repeat: no-repeat;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
   .heading {
+    padding-top: 40px;
     margin: 0 auto 21px;
     color: #fff;
     font-family: 'Raleway-Medium', 'Arial', sans-serif;
