@@ -75,7 +75,7 @@
   width: 100%;
   margin: 0 auto 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   .recent-item {
     display: flex;
@@ -84,11 +84,12 @@
     height: 396px;
     border: 1px solid #f8f8f8;
     position: relative;
+    margin-bottom: 10px;
     &:hover {
       background-color: #362f2d;
     }
   }
-  img {
+  .img {
     margin-bottom: 30px;
   }
   .date {
@@ -128,6 +129,7 @@
     font-weight: 500;
     margin-bottom: 19px;
     padding-left: 30px;
+    z-index:50;
   }
   .topic {
     color: #8c8c8c;
@@ -137,6 +139,7 @@
     line-height: 22px;
     padding-left: 30px;
     margin-bottom: 27px;
+    z-index:50;
   }
   .read-more {
     padding-left: 30px;
@@ -146,6 +149,7 @@
     font-weight: 300;
     line-height: 20px;
     position: relative;
+    z-index:50;
     &:active {
       color: #fff;
     }
@@ -157,7 +161,7 @@
   }
 }
 .recent-item:hover {
-  img {
+  .img {
     filter: brightness(40%)
   }
   .article-heading {

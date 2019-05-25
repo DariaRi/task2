@@ -1,5 +1,5 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .article:hover img {
+  .article:hover {
     filter: brightness(40%);
     position: relative;
   }

@@ -23,7 +23,7 @@
                 <span>Waxom</span>
                 </a>
              </div>
-             <nav>
+             <nav class="nav-desctop">
                  <ul class="menu-list">
                      <li><a href="#">Home</a></li>
                      <li><a href="#">About us</a></li>
@@ -39,6 +39,21 @@
                      <input type="search">
                  </form>
              </nav>
+             <div class="menu-block-mobile">
+                 <nav class="nav-mobile">
+                     <a href="#">Home</a>
+                     <a href="#">About us</a>
+                     <a href="#">Portfolio</a>
+                     <a href="#">Features</a>
+                     <a href="#">Blog</a>
+                     <a href="#">Pricing</a>
+                     <a href="#">Shortcodes</a>
+                     <a href="#">Contacts</a>
+                 </nav>
+                 <a href="#" class="menu-btn-mobile">
+                     <span><!----></span>
+                </a>
+             </div>
          </section>
          <section class="heading-content">
              <div class="title">
@@ -122,42 +137,42 @@
          </div>
          <div class="items-container">
              <article class="article">
-                 <img src="img/latest-project-1.png" alt="latest project 1" title=" our latest project" width="370" height="237">
+                 <div class="img"><img src="img/latest-project-1.png" alt="latest project 1" title=" our latest project" width="370" height="237"></div> <!-- using div only just for IE! !-->
                  <span class="article-heading">Claritas Etiam Processus</span>
                  <span class="topic">Photography, Nature</span>
                  <button class="share"><!----></button>
                  <button class="search"><!----></button>
              </article>
              <article class="article">
-                 <img src="img/latest-project-2.png" alt="latest project 2" title=" our latest project" width="370" height="237">
+                 <div class="img"><img src="img/latest-project-2.png" alt="latest project 2" title=" our latest project" width="370" height="237"></div>
                  <span class="article-heading">Quam Nutamus Farum</span>
                  <span class="topic">Graphic Design, Mock-Up</span>
                  <button class="share"><!----></button>
                  <button class="search"><!----></button>
              </article>
              <article class="article">
-                 <img src="img/latest-project-3.png" alt="latest project 3" title=" our latest project" width="370" height="237">
+                 <div class="img"><img src="img/latest-project-3.png" alt="latest project 3" title=" our latest project" width="370" height="237"></div>
                  <span class="article-heading">Usus Legentis Videntur</span>
                  <span class="topic">Photography, Holiday</span>
                  <button class="share"><!----></button>
                  <button class="search"><!----></button>
              </article>
-             <article class="article">
-                 <img src="img/latest-project-4.png" alt="latest project 4" title=" our latest project" width="370" height="237">
+             <article class="article article-4">
+                 <div class="img"><img src="img/latest-project-4.png" alt="latest project 4" title=" our latest project" width="370" height="237"></div>
                  <span class="article-heading">Claritas Etiam Processus</span>
                  <span class="topic">Photography, Nature</span>
                  <button class="share"><!----></button>
                  <button class="search"><!----></button>
              </article>
-             <article class="article">
-                 <img src="img/latest-project-5.png" alt="latest project 5" title=" our latest project" width="370" height="237">
+             <article class="article article-5">
+                 <div class="img"><img src="img/latest-project-5.png" alt="latest project 5" title=" our latest project" width="370" height="237"></div>
                  <span class="article-heading">Quam Nutamus Farum</span>
                  <span class="topic">Graphic Design, Mock-Up</span>
                  <button class="share"><!----></button>
                  <button class="search"><!----></button>
              </article>
-             <article class="article">
-                 <img src="img/latest-project-6.png" alt="latest project 6" title=" our latest project" width="370" height="237">
+             <article class="article  article-6">
+                 <div class="img"><img src="img/latest-project-6.png" alt="latest project 6" title=" our latest project" width="370" height="237"></div>
                  <span class="article-heading">Usus Legentis Videntur</span>
                  <span class="topic">Photography, Holiday</span>
                  <button class="share"><!----></button>
@@ -240,7 +255,7 @@
                      <span class="day">30</span>
                      <span class="time">Sep.</span>
                  </div>
-                 <img src="img/recent-item-1.png" alt="recent post" title="recent post" width="370" height="220">
+                 <div class="img"><img src="img/recent-item-1.png" alt="recent post" title="recent post" width="370" height="220"></div> <!-- using DIV on;y for IE!!! !-->
                  <span class="article-heading">Lorem ipsum dolor sit amet</span>
                  <span class="topic">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
                  <a href="#" class="read-more">Read more</a>
@@ -250,17 +265,17 @@
                      <span class="day">30</span>
                      <span class="time">Sep.</span>
                  </div>
-                 <img src="img/recent-item-2.png" alt="recent post" title="recent post" width="370" height="220">
+                 <div class="img"><img src="img/recent-item-2.png" alt="recent post" title="recent post" width="370" height="220"></div>
                  <span class="article-heading">Lorem ipsum dolor sit amet</span>
                  <span class="topic">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
                  <a href="#" class="read-more">Read more</a>
              </article>
-             <article class="recent-item">
+             <article class="recent-item recent-item-hidden">
                  <div class="date">
                      <span class="day">30</span>
                      <span class="time">Sep.</span>
                  </div>
-                 <img src="img/recent-item-3.png" alt="recent post" title="recent post" width="370" height="220">
+                 <div class="img"><img src="img/recent-item-3.png" alt="recent post" title="recent post" width="370" height="220"></div>
                  <span class="article-heading">Lorem ipsum dolor sit amet</span>
                  <span class="topic">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
                  <a href="#" class="read-more">Read more</a>
@@ -335,18 +350,31 @@
          </div>
      </section>
      <footer>
-         <div class="left-content">
-             <span class="copyright">Copyright © 2015 <span class="waxom">Waxom</span></span>
-             <a href="#" class="privacy">Privacy Policy</a>
-             <a href="#" class="faq">FAQ</a>
-             <a href="#">Support</a>
-         </div>
-         <div class="right-content">
-             <span class="designed">Designed by <a href="#">ThemeFire</a></span>
-             <span class="evanto-market">Only on <a href="#">Envato Market</a></span>
-         </div>
+         <section class="footer-content">
+             <div class="left-content">
+                 <span class="copyright">Copyright © 2015 <span class="waxom">Waxom</span></span>
+                 <a href="#" class="privacy">Privacy Policy</a>
+                 <a href="#" class="faq">FAQ</a>
+                 <a href="#">Support</a>
+             </div>
+             <div class="right-content">
+                 <span class="designed">Designed by <a href="#">ThemeFire</a></span>
+                 <span class="evanto-market">Only on <a href="#">Envato Market</a></span>
+             </div>
+         </section>
      </footer>
  </main>
-     <script><!----></script>
+     <script src="js/modernizr-custom.js"></script>
+     <script src="js/jquery.js"></script>
+     <script>
+         $(document).ready(function() {
+             $('.menu-btn-mobile').on('click', function(e) {
+                 e.preventDefault();
+                 $(this).toggleClass('menu-btn-mobile_active');
+                 $('.nav-mobile').toggleClass('menu-nav-mobile_active');
+             });
+         });
+     </script>
+
 </body>
 </html>
