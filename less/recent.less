@@ -83,12 +83,43 @@
     width: 370px;
     height: 396px;
     border: 1px solid #f8f8f8;
+    position: relative;
     &:hover {
       background-color: #362f2d;
     }
   }
   img {
     margin-bottom: 30px;
+  }
+  .date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    .fdcolumn ();
+    .day {
+      width: 50px;
+      height: 35px;
+      color: #fff;
+      font-family: 'Montserrat-Light', 'Arial', sans-serif;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: 300;
+      border-radius: 3px 3px 0 0;
+      background-color: #363636;
+      text-align: center;
+    }
+    .time {
+      color: #fff;
+      font-family: 'Roboto-Regular', 'Arial', sans-serif;
+      font-size: 0.750em;
+      font-weight: 400;
+      line-height: 20px;
+      width: 50px;
+      height: 25px;
+      border-radius: 0 0 3px 3px;
+      background-color: #252525;
+      text-align: center;
+    }
   }
   .article-heading {
     color: #555;
@@ -125,12 +156,24 @@
     }
   }
 }
-.recent-item:hover img {
-  filter: brightness(40%)
+.recent-item:hover {
+  img {
+    filter: brightness(40%)
+  }
+  .article-heading {
+    color: #c7b299;
+  }
+  .topic {
+    color: #fff;
+  }
+  .date {
+    z-index: 99;
+  }
+    .day {
+      background-color: #c7b299;
+    }
+  .time {
+    background-color: #a48d72;
+  }
 }
-.recent-item:hover .article-heading {
-  color: #c7b299;
-}
-.recent-item:hover .topic {
-  color: #fff;
-}
+

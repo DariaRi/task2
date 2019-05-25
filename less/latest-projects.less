@@ -13,6 +13,7 @@
   .description {
     margin: 0 auto 40px;
     max-width: 769px;
+    padding: 0 5px;
     width: 100%;
     font-family: 'Montserrat-Light', 'Arial', sans-serif;
     color: #8c8c8c;
@@ -63,8 +64,8 @@
   .items-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: @width-content;
+    justify-content: space-around;
+    max-width: @width-content + 29px;
     width: 100%;
     margin: 0 auto;
     .article {
@@ -73,7 +74,7 @@
       width: 370px;
       height: 330px;
       background-color: #fbfaf8;
-      margin-bottom: 30px;
+      margin: 15px;
       cursor: pointer;
       position: relative;
       .article-heading {

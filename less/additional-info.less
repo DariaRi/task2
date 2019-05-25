@@ -1,0 +1,224 @@
+.additional-info {
+  max-width: @width;
+  width: 100%;
+  max-height: 508px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #191919;
+}
+.additional-info_content {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .about-site {
+    max-width: 258px;
+    width: 100%;
+    margin-right: 30px;
+    .fdcolumn ();
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-left: 1%;
+      margin-bottom: 30px;
+      width: 181px;
+      .logo-svg {
+        fill: #fff;
+      }
+      &:hover .logo-svg {
+        fill: #998675;
+      }
+      &:active .logo-svg {
+        fill: #fff;
+      }
+      span {
+        color: #fff;
+        font-family: 'Raleway-Regular', 'Arial', sans-serif;
+        text-transform: capitalize;
+        font-size: 2.125em;
+        font-weight: 400;
+        letter-spacing: -1.36px;
+      }
+      &:hover span {
+        color: #998675;
+      }
+      &:active span {
+        color: #fff;
+      }
+    }
+    .description {
+      max-width: 258px;
+      color: #555;
+      font-family: 'Montserrat-Light;', 'Arial', sans-serif;
+      font-size: 0.875em;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 33px;
+      padding-left: 5px;
+      letter-spacing: 0.3px;
+    }
+    .read-more {
+      color: #d1d1d1;
+      font-family: 'Montserrat-Light;', 'Arial', sans-serif;
+      font-size: 0.875em;
+      font-weight: 400;
+      line-height: 20px;
+      position: relative;
+      &:hover {
+        color: #998675;
+      }
+      &:active {
+        color: #fff;
+      }
+      &:after {
+        content: url(../img/arrow-read-more-white.png);
+        position: absolute;
+        left: 80px;
+      }
+      &:hover:after {
+        content: url(../img/arrow-read-more.png);
+      }
+    }
+  }
+
+  .recent-post {
+    .fdcolumn ();
+    max-width: 270px;
+    width: 100%;
+    padding-top: 16px;
+    margin-right: 30px;
+    .heading {
+      .heading-additional ();
+    }
+    .article {
+      .fdcolumn ();
+      padding: 10px 0;
+      cursor: pointer;
+      .time {
+        .time-additional ();
+      }
+      .txt {
+        .txt-additional ();
+      }
+    }
+    .article:nth-child(2) {
+      max-width: 250px;
+    }
+    .article:nth-child(3) {
+       max-width: 251px;
+     }
+    .article:nth-child(4) {
+      max-width: 259px;
+    }
+    .article:nth-child(3):before {
+      content: '';
+      width: 270px;
+      //height: 1px;
+      border-top: 1px solid #252525;
+      padding: 10px 0;
+    }
+    .article:nth-child(3):after {
+      content: '';
+      width: 270px;
+      //height: 1px;
+      border-bottom: 1px solid #252525;
+      padding: 10px 0;
+    }
+    .article:hover .time{
+      color: #fff;
+    }
+    .article:hover .txt {
+      color: #c7b299;
+    }
+    .article:active .time{
+      color: #363636;
+    }
+    .article:active .txt{
+      color: #555;
+    }
+  }
+  .twitter {
+    .fdcolumn ();
+    max-width: 270px;
+    width: 100%;
+    padding-top: 16px;
+    .heading {
+      .heading-additional ();
+    }
+    .twitter-post {
+      .fdcolumn ();
+      padding: 10px 0;
+      cursor: pointer;
+      margin-right: 30px;
+      .txt {
+        .txt-additional ();
+        .link {
+          color: #00bff3;
+        }
+      }
+      .time {
+        .time-additional ();
+      }
+      .hashtag {
+        color: #00bff3;
+      }
+      .link-short {
+        color: #959595;
+      }
+    }
+  }
+  .twitter-post:nth-child(3):before {
+    content: '';
+    width: 270px;
+    //height: 1px;
+    border-top: 1px solid #252525;
+    padding: 10px 0;
+  }
+  .twitter-post:nth-child(3):after {
+    content: '';
+    width: 270px;
+    border-bottom: 1px solid #252525;
+    padding: 10px 0;
+  }
+  .twitter-post:hover .time {
+    color: #fff;
+  }
+  .twitter-post:hover .txt {
+    color: #c7b299;
+  }
+  .twitter-post:active .time {
+    color: #363636;
+  }
+  .twitter-post:active .txt {
+    color: #555;
+  }
+}
+
+.dribble {
+  .fdcolumn ();
+  max-width: 283px;
+  width: 100%;
+  padding-top: 16px;
+  .heading {
+    .heading-additional ();
+  }
+  .dribble-widgets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .widget {
+      margin: 5px;
+    }
+  }
+}
+
+
+
