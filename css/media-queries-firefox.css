@@ -1,0 +1,5 @@
+@-moz-document url-prefix() {
+  .mob-device .mob-device_description details summary::before {
+    width: 30px;
+  }
+}
